@@ -46,7 +46,7 @@ const Navbar = () => {
             </li> */}
 
             <li className="navItem">
-              <a href="#" className="navLink">Eplore</a>
+              <a href="#" className="navLink">Explore</a>
             </li>
 
             <button className='btn'>
