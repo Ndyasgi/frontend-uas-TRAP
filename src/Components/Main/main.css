@@ -41,11 +41,11 @@
 }
 .main .secContent .singleDestination {
   height: 100%;
-  display: grid;
+  //display: grid;
   row-gap: 10px;
   padding: 1rem;
   border-radius: 10px;
-  align-items: center;
+  align-items: justify;
   background: var(--cardBG);
   box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
   overflow: hidden;
@@ -76,6 +76,7 @@
 .main .secContent .singleDestination .cardInfo .destTitle {
   color: var(--blackColor);
   font-size: 1.25rem;
+  padding: 1rem;
 }
 .main .secContent .singleDestination .cardInfo .continent {
   gap: 0.5rem;
@@ -123,10 +124,11 @@
   font-weight: 500;
 }
 .main .secContent .singleDestination .cardInfo .btn {
+  position: relative;
   margin-top: 1rem;
   color: var(--whiteColor);
   font-weight: 600;
-  justify-content: space-between;
+  justify-content: center;
   gap: 0.5rem;
 }
 .main .secContent .singleDestination .cardInfo .btn .icon {

@@ -83,6 +83,7 @@
                 .destTitle{
                     color: var(--blackColor);
                     font-size: 1.25rem;
+                    align-items: center;
                 }
 
                 .continent{
@@ -116,6 +117,11 @@
                         align-items: center;
                         justify-content: center;
 
+                        .grade img{
+                            width: 20px;
+                            height: 20px;
+                        }
+
                         small{
                             text-align: center;
                             background: var(--gradientColor);
@@ -123,6 +129,8 @@
                             color: var(--whiteColor);
                             padding: 1px 10px;
                             font-size: 10px;
+
+                            
                         }
                     }
 

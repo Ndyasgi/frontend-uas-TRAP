@@ -1,8 +1,12 @@
 import React, {useState} from 'react'
 import './navbar.css'
-import {MdOutlineTravelExplore} from 'react-icons/md'
+// import {MdOutlineTravelExplore} from 'react-icons/md'
 import {AiFillCloseCircle} from 'react-icons/ai'
 import {TbGridDots} from 'react-icons/tb'
+
+
+
+import logo from "../../Assets/TripTrap.jpg"
 
 const Navbar = () => {
   const [active, setActive] = useState('navBar')
@@ -17,17 +21,19 @@ const Navbar = () => {
   }
 
   return (
+    
     <section className='navBarSection'>
-      <header className="header flex">
+      <header className="header">
 
-        <div className="logoDiv">
-          <a href="#" className="logo flex">
-            <h1><MdOutlineTravelExplore className="icon"/> TripTrap</h1>
+        {/* <div className="logoDiv"> */}
+          <a href="#">
+            <img style={{ width: 50, height: 45 }} src={logo} />
+            {/* <strong>TripTrap</strong> */}
           </a>
-        </div>
+        {/* </div> */}
 
         <div className={active}>
-          <ul className="navLists flex">
+          <ul className="navLists">
 
             <li className="navItem">
               <a href="#" className="navLink">Home</a>
@@ -41,16 +47,8 @@ const Navbar = () => {
               <a href="#" className="navLink">Contact</a>
             </li>
 
-            {/* <li className="navItem">
-              <a href="#" className="navLink">Search</a>
-            </li> */}
-
-            <li className="navItem">
-              <a href="#" className="navLink">Explore</a>
-            </li>
-
             <button className='btn'>
-              <a href="#">Sign In</a>
+              <a href="#" className= "navLink">Explore</a>
             </button>
 
           </ul>
